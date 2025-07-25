@@ -1,7 +1,7 @@
 class KnightVertex
-  private
-
   attr_reader :coordinates, :adjacent_coordinates
+
+  private
 
   def initialize(coordinates)
     @coordinates = coordinates
