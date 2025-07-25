@@ -1,14 +1,5 @@
-class KnightVertex
-  attr_reader :coordinates, :adjacent_coordinates
-
-  private
-
-  def initialize(coordinates)
-    @coordinates = coordinates
-    @adjacent_coordinates = filter_coordinates_list(possible_adjacent_coordinates)
-  end
-
-  def possible_adjacent_coordinates # rubocop:disable Metrics/AbcSize
+module AdjacentCoordinates
+  def possible_adjacent_coordinates(coordinates) # rubocop:disable Metrics/AbcSize
     [
       [coordinates[0] + 2, coordinates[1] + 1],
       [coordinates[0] + 2, coordinates[1] - 1],
