@@ -8,9 +8,9 @@ class KnightsTravails
 
   attr_reader :start_coordinates, :end_coordinates
 
-  def initialize
-    @start_coordinates = generate_coordinates
-    @end_coordinates = generate_coordinates
+  def initialize(start_coordinates = generate_coordinates, end_coordinates = generate_coordinates)
+    @start_coordinates = start_coordinates
+    @end_coordinates = end_coordinates
   end
 
   def generate_coordinates
