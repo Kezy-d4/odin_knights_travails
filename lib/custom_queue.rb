@@ -25,4 +25,8 @@ class CustomQueue
   def empty?
     data.empty?
   end
+
+  def include?(object)
+    data.include?(object)
+  end
 end
