@@ -13,15 +13,15 @@ module AdjacentCoordinates
     ]
   end
 
-  def in_bounds?(coordinate_pair)
-    coordinate_pair.all? { |coordinate| coordinate.between?(0, 7) }
+  def in_bounds?(coordinates)
+    coordinates.all? { |coordinate| coordinate.between?(0, 7) }
   end
 
   def filter_coordinates_list(coordinates_list)
-    coordinates_list.select { |coordinate_pair| in_bounds?(coordinate_pair) }
+    coordinates_list.select { |coordinates| in_bounds?(coordinates) }
   end
 
-  def adjacent_coordinates(coordinate_pair)
-    filter_coordinates_list(possible_adjacent_coordinates(coordinate_pair))
+  def adjacent_coordinates(coordinates)
+    filter_coordinates_list(possible_adjacent_coordinates(coordinates))
   end
 end
