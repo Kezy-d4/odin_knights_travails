@@ -1,6 +1,8 @@
 require_relative "adjacent_coordinates"
 require_relative "custom_queue"
 
+# Searches the implicit graph using BFS and determines the shortest path between the source and
+# destination coordinates.
 class KnightsTravails
   include AdjacentCoordinates
 

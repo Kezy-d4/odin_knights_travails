@@ -1,3 +1,4 @@
+# Facilitates breadth first search of the implicit graph.
 class CustomQueue
   private
 
