@@ -10,3 +10,5 @@ on the chessboard given enough moves.
 
 This implementation solves the problem by performing a breadth first search of the implicit graph, 
 modified to track the shortest path to the destination.
+
+<img width="740" height="162" alt="knights_travails" src="https://github.com/user-attachments/assets/e3ca2662-2ebf-4775-8f14-4dc62595a991" />
